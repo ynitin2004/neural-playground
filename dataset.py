@@ -14,6 +14,7 @@ def shuffle(array):
 def classify_two_gauss_data(num_samples, noise):
     centers = [[2, 2], [-2, -2]]
     X, y = make_blobs(n_samples=num_samples, centers=centers, cluster_std=noise)
+    y = np.where(y == 0, 0, 1)  # Convert labels to 0 and 1
     points = [Example2D(x, y, label) for (x, y), label in zip(X, y)]
     return points
 
@@ -64,7 +65,7 @@ def classify_circle_data(num_samples, noise):
         angle = np.random.uniform(0, 2 * np.pi)
         x = r * np.sin(angle)
         y = r * np.cos(angle)
-        label = 1 if (x ** 2 + y ** 2) < (radius * 0.5) ** 2 else -1
+        label = 1 if (x ** 2 + y ** 2) < (radius * 0.5) ** 2 else 0
         x += noise * np.random.uniform(-radius, radius)
         y += noise * np.random.uniform(-radius, radius)
         points.append(Example2D(x, y, label))
@@ -73,7 +74,7 @@ def classify_circle_data(num_samples, noise):
         angle = np.random.uniform(0, 2 * np.pi)
         x = r * np.sin(angle)
         y = r * np.cos(angle)
-        label = 1 if (x ** 2 + y ** 2) < (radius * 0.5) ** 2 else -1
+        label = 1 if (x ** 2 + y ** 2) < (radius * 0.5) ** 2 else 0
         x += noise * np.random.uniform(-radius, radius)
         y += noise * np.random.uniform(-radius, radius)
         points.append(Example2D(x, y, label))
