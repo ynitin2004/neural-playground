@@ -2,6 +2,10 @@
 
 An interactive visualization tool for understanding neural network training, built with PyTorch and Streamlit.
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://neural-playground-zstc2o6qjrhkp4b6zspg6n.streamlit.app/)
+
+🔗 **Live Demo:** [https://neural-playground-zstc2o6qjrhkp4b6zspg6n.streamlit.app/](https://neural-playground-zstc2o6qjrhkp4b6zspg6n.streamlit.app/)
+
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.0+-green.svg)
