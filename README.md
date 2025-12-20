@@ -40,6 +40,15 @@ An interactive visualization tool for understanding neural network training, bui
 - Precision, Recall, F1 Score
 - Real-time decision boundary visualization
 
+### 🔍 Advanced Visualizations (NEW!)
+- **Weight Heatmaps**: Visualize learned weight matrices per layer
+- **Gradient Flow**: Detect vanishing/exploding gradients
+- **Neuron Response Maps**: See what each neuron responds to
+- **Activation Distributions**: Analyze activation patterns
+- **3D Decision Surface**: Interactive 3D probability surface
+- **Experiment Comparison**: Compare multiple training runs
+- **Network Architecture Diagram**: Visual representation of your model
+
 ## 🚀 Quick Start
 
 ### Installation
@@ -72,6 +81,7 @@ neural-playground/
 ├── models.py           # Neural network models
 ├── dataset.py          # Dataset generators
 ├── training_utils.py   # Training utilities
+├── visualizations.py   # Advanced visualization functions
 ├── nn1.py              # Command-line version
 ├── heatmap1.py         # Heatmap visualization
 └── README.md
@@ -84,14 +94,32 @@ neural-playground/
 3. **Set Training Options**: Choose optimizer, learning rate, and epochs
 4. **Add Regularization**: Enable dropout, batch norm, or L1/L2 regularization
 5. **Train**: Click "Train Model" and watch the live visualization
+6. **Analyze**: Explore the Model Analysis tab for deep insights
+7. **Compare**: Run multiple experiments and compare results
+8. **Visualize 3D**: View interactive 3D decision surfaces
 
-## 📸 Screenshots
+## 📸 Features
 
-### Decision Boundary Visualization
-Watch how the neural network learns to separate different classes in real-time.
+### 🎮 Training Tab
+- Live decision boundary updates
+- Real-time loss and accuracy curves
+- Network architecture diagram
 
-### Live Metrics Dashboard
-Track training progress with live updates of loss, accuracy, and F1 score.
+### 🔍 Model Analysis Tab
+- **Weights**: Heatmaps of weight matrices
+- **Gradients**: Gradient flow analysis for debugging
+- **Activations**: Distribution and response maps
+- **Learning Curves**: Comprehensive training metrics
+
+### 📊 Comparisons Tab
+- Side-by-side experiment comparison
+- Training history overlay
+- Best accuracy tracking
+
+### 🎨 3D Visualization Tab
+- Interactive 3D decision surface
+- Adjustable view angles
+- Probability surface visualization
 
 ## 🔧 Requirements
 
